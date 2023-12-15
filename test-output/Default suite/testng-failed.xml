@@ -7,10 +7,7 @@
         <methods>
           <include name="verifyLoginWithInvalidCredentials"/>
           <include name="loginSetup"/>
-          <include name="verifyLoginWithValidCredentials" invocation-numbers="0"/>
           <include name="verifyLoginWithInvalidEmailValidPassword"/>
-          <include name="verifyLoginWithNoCredentials"/>
-          <include name="verifyLoginWithValidEmailInvalidPassword"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.qa.testCasesTn.LoginTest -->

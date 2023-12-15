@@ -9,9 +9,11 @@ import org.testng.annotations.Test;
 
 import com.qa.testBase.TestBase;
 import com.qa.tn.testData.Data_driven_excel;
+import com.tn.qa.Utilities.Util;
 import com.tn.qa.pages.AccountPage;
 import com.tn.qa.pages.HomePage;
 import com.tn.qa.pages.LoginPage;
+
 
 public class LoginTest extends TestBase {
 
@@ -45,10 +47,10 @@ public class LoginTest extends TestBase {
 	@Test(priority = 2)
 	public void verifyLoginWithInvalidCredentials() {
 		lp = new LoginPage(driver);
-		lp.navigateToLoginPage(dataProp.getProperty("invalidEmail"), dataProp.getProperty("invalidPassword"));
+		lp.navigateToLoginPage(Util.emailWithDateTimeStamp(), dataProp.getProperty("invalidPassword"));
 		Assert.assertTrue(lp.retrieveEmailPasswordNotMatchingWarningText().contains(dataProp.getProperty("emailPasswordNoMatchWarningMessage")));
-
 	}
+		
 
 	@Test(priority = 3)
 	public void verifyLoginWithValidEmailInvalidPassword() {
@@ -60,13 +62,14 @@ public class LoginTest extends TestBase {
 	@Test(priority = 4)
 	public void verifyLoginWithInvalidEmailValidPassword() {
 		lp = new LoginPage(driver);
-		lp.navigateToLoginPage(dataProp.getProperty("invalidEmail"), prop.getProperty("validPassword"));;
+		lp.navigateToLoginPage(Util.emailWithDateTimeStamp(), prop.getProperty("validPassword"));
 		Assert.assertTrue(lp.retrieveEmailPasswordNotMatchingWarningText().contains(dataProp.getProperty("emailPasswordNoMatchWarningMessage")));
 	}
 
 
 	@Test(priority = 5)
 	public void verifyLoginWithNoCredentials() {
+		lp = new LoginPage(driver);
 		lp.clickOnLoginButton();
 		Assert.assertTrue(lp.retrieveEmailPasswordNotMatchingWarningText().contains(dataProp.getProperty("emailPasswordNoMatchWarningMessage")));
 	}

@@ -12,7 +12,6 @@
           <include name="checkOutAsExistingUser"/>
           <include name="checkoutAsNewUser"/>
           <include name="tearDown"/>
-          <include name="checkOutAsGuestUser"/>
         </methods>
       </class> <!-- com.qa.testCasesTn.CheckOutTest -->
       <class name="com.qa.testCasesTn.AddtoCartTest">
@@ -22,17 +21,6 @@
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.qa.testCasesTn.AddtoCartTest -->
-      <class name="com.qa.testCasesTn.LoginTest">
-        <methods>
-          <include name="verifyLoginWithInvalidCredentials"/>
-          <include name="loginSetup"/>
-          <include name="verifyLoginWithValidCredentials" invocation-numbers="0 1 2 3 4"/>
-          <include name="verifyLoginWithInvalidEmailValidPassword"/>
-          <include name="verifyLoginWithNoCredentials"/>
-          <include name="tearDown"/>
-          <include name="verifyLoginWithValidEmailInvalidPassword"/>
-        </methods>
-      </class> <!-- com.qa.testCasesTn.LoginTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

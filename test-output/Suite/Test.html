@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>8/13/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>18/3/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Dec 10 21:56:07 EST 2023</td>
+<td>Started on:</td><td>Thu Dec 14 23:47:19 EST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>304 seconds (304309 ms)</td>
+<tr><td>Total time:</td><td>167 seconds (167659 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,13 +76,17 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.qa.testCasesTn.LoginTest.verifyLoginWithValidCredentials()'><b>verifyLoginWithValidCredentials</b><br>Test class: com.qa.testCasesTn.LoginTest<br>Parameters: mashrufashanjia10000@gmail.com, Mashrufa@123</td>
-<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;com.tn.qa.pages.LoginPage.navigateToLoginPage(String, String)&quot; because &quot;this.loginpage&quot; is null
-	at com.qa.testCasesTn.LoginTest.verifyLoginWithValidCredentials(LoginTest.java:41)
+<td title='com.qa.testCasesTn.CheckOutTest.checkoutAsNewUser()'><b>checkoutAsNewUser</b><br>Test class: com.qa.testCasesTn.CheckOutTest</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at com.qa.testCasesTn.CheckOutTest.checkoutAsNewUser(CheckOutTest.java:56)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace885876140", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace885876140'><pre>java.lang.NullPointerException: Cannot invoke &quot;com.tn.qa.pages.LoginPage.navigateToLoginPage(String, String)&quot; because &quot;this.loginpage&quot; is null
-	at com.qa.testCasesTn.LoginTest.verifyLoginWithValidCredentials(LoginTest.java:41)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace477662472", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace477662472'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at com.qa.testCasesTn.CheckOutTest.checkoutAsNewUser(CheckOutTest.java:56)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -113,131 +117,14 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>com.qa.testCasesTn.LoginTest@1cf6d1be</td></tr>
-<tr>
-<td title='com.qa.testCasesTn.LoginTest.verifyLoginWithValidEmailInvalidPassword()'><b>verifyLoginWithValidEmailInvalidPassword</b><br>Test class: com.qa.testCasesTn.LoginTest</td>
-<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;com.tn.qa.pages.LoginPage.navigateToLoginPage(String, String)&quot; because &quot;this.loginpage&quot; is null
-	at com.qa.testCasesTn.LoginTest.verifyLoginWithValidEmailInvalidPassword(LoginTest.java:54)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1959623055", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1959623055'><pre>java.lang.NullPointerException: Cannot invoke &quot;com.tn.qa.pages.LoginPage.navigateToLoginPage(String, String)&quot; because &quot;this.loginpage&quot; is null
-	at com.qa.testCasesTn.LoginTest.verifyLoginWithValidEmailInvalidPassword(LoginTest.java:54)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:848)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-	at org.testng.TestNG.runSuites(TestNG.java:1114)
-	at org.testng.TestNG.run(TestNG.java:1082)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>com.qa.testCasesTn.LoginTest@1cf6d1be</td></tr>
-<tr>
-<td title='com.qa.testCasesTn.LoginTest.verifyLoginWithValidCredentials()'><b>verifyLoginWithValidCredentials</b><br>Test class: com.qa.testCasesTn.LoginTest<br>Parameters: mashrufashanjia100000@gmail.com, Mashrufa@123</td>
-<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;com.tn.qa.pages.LoginPage.navigateToLoginPage(String, String)&quot; because &quot;this.loginpage&quot; is null
-	at com.qa.testCasesTn.LoginTest.verifyLoginWithValidCredentials(LoginTest.java:41)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace582495711", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace582495711'><pre>java.lang.NullPointerException: Cannot invoke &quot;com.tn.qa.pages.LoginPage.navigateToLoginPage(String, String)&quot; because &quot;this.loginpage&quot; is null
-	at com.qa.testCasesTn.LoginTest.verifyLoginWithValidCredentials(LoginTest.java:41)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:848)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-	at org.testng.TestNG.runSuites(TestNG.java:1114)
-	at org.testng.TestNG.run(TestNG.java:1082)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>com.qa.testCasesTn.LoginTest@1cf6d1be</td></tr>
-<tr>
-<td title='com.qa.testCasesTn.LoginTest.verifyLoginWithInvalidCredentials()'><b>verifyLoginWithInvalidCredentials</b><br>Test class: com.qa.testCasesTn.LoginTest</td>
-<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;com.tn.qa.pages.LoginPage.navigateToLoginPage(String, String)&quot; because &quot;this.loginpage&quot; is null
-	at com.qa.testCasesTn.LoginTest.verifyLoginWithInvalidCredentials(LoginTest.java:48)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace933205333", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace933205333'><pre>java.lang.NullPointerException: Cannot invoke &quot;com.tn.qa.pages.LoginPage.navigateToLoginPage(String, String)&quot; because &quot;this.loginpage&quot; is null
-	at com.qa.testCasesTn.LoginTest.verifyLoginWithInvalidCredentials(LoginTest.java:48)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:848)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-	at org.testng.TestNG.runSuites(TestNG.java:1114)
-	at org.testng.TestNG.run(TestNG.java:1082)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>com.qa.testCasesTn.LoginTest@1cf6d1be</td></tr>
+<td>com.qa.testCasesTn.CheckOutTest@663c9e7a</td></tr>
 <tr>
 <td title='com.qa.testCasesTn.CheckOutTest.checkOutAsExistingUser()'><b>checkOutAsExistingUser</b><br>Test class: com.qa.testCasesTn.CheckOutTest</td>
 <td><div><pre>java.lang.AssertionError: expected [true] but found [false]
 	at com.qa.testCasesTn.CheckOutTest.checkOutAsExistingUser(CheckOutTest.java:104)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1749018549", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1749018549'><pre>java.lang.AssertionError: expected [true] but found [false]
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace501668992", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace501668992'><pre>java.lang.AssertionError: expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1578)
 	at org.testng.Assert.assertTrue(Assert.java:57)
@@ -279,8 +166,8 @@ function toggleAllBoxes() {
 <td><div><pre>java.lang.AssertionError: expected [true] but found [false]
 	at com.qa.testCasesTn.AddtoCartTest.checkingOutValidProduct(AddtoCartTest.java:52)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace653774328", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace653774328'><pre>java.lang.AssertionError: expected [true] but found [false]
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace184642382", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace184642382'><pre>java.lang.AssertionError: expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1578)
 	at org.testng.Assert.assertTrue(Assert.java:57)
@@ -317,287 +204,6 @@ function toggleAllBoxes() {
 </pre></div></td>
 <td>8</td>
 <td>com.qa.testCasesTn.AddtoCartTest@738dc9b</td></tr>
-<tr>
-<td title='com.qa.testCasesTn.LoginTest.verifyLoginWithNoCredentials()'><b>verifyLoginWithNoCredentials</b><br>Test class: com.qa.testCasesTn.LoginTest</td>
-<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;com.tn.qa.pages.LoginPage.clickOnLoginButton()&quot; because &quot;this.loginpage&quot; is null
-	at com.qa.testCasesTn.LoginTest.verifyLoginWithNoCredentials(LoginTest.java:68)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace967022668", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace967022668'><pre>java.lang.NullPointerException: Cannot invoke &quot;com.tn.qa.pages.LoginPage.clickOnLoginButton()&quot; because &quot;this.loginpage&quot; is null
-	at com.qa.testCasesTn.LoginTest.verifyLoginWithNoCredentials(LoginTest.java:68)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:848)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-	at org.testng.TestNG.runSuites(TestNG.java:1114)
-	at org.testng.TestNG.run(TestNG.java:1082)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>com.qa.testCasesTn.LoginTest@1cf6d1be</td></tr>
-<tr>
-<td title='com.qa.testCasesTn.LoginTest.verifyLoginWithValidCredentials()'><b>verifyLoginWithValidCredentials</b><br>Test class: com.qa.testCasesTn.LoginTest<br>Parameters: mashrufashanjia100@gmail.com, Mashrufa@123</td>
-<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;com.tn.qa.pages.LoginPage.navigateToLoginPage(String, String)&quot; because &quot;this.loginpage&quot; is null
-	at com.qa.testCasesTn.LoginTest.verifyLoginWithValidCredentials(LoginTest.java:41)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1207664329", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1207664329'><pre>java.lang.NullPointerException: Cannot invoke &quot;com.tn.qa.pages.LoginPage.navigateToLoginPage(String, String)&quot; because &quot;this.loginpage&quot; is null
-	at com.qa.testCasesTn.LoginTest.verifyLoginWithValidCredentials(LoginTest.java:41)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:848)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-	at org.testng.TestNG.runSuites(TestNG.java:1114)
-	at org.testng.TestNG.run(TestNG.java:1082)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>com.qa.testCasesTn.LoginTest@1cf6d1be</td></tr>
-<tr>
-<td title='com.qa.testCasesTn.LoginTest.verifyLoginWithValidCredentials()'><b>verifyLoginWithValidCredentials</b><br>Test class: com.qa.testCasesTn.LoginTest<br>Parameters: mashrufashanjia1000@gmail.com, Mashrufa@123</td>
-<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;com.tn.qa.pages.LoginPage.navigateToLoginPage(String, String)&quot; because &quot;this.loginpage&quot; is null
-	at com.qa.testCasesTn.LoginTest.verifyLoginWithValidCredentials(LoginTest.java:41)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1958814164", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1958814164'><pre>java.lang.NullPointerException: Cannot invoke &quot;com.tn.qa.pages.LoginPage.navigateToLoginPage(String, String)&quot; because &quot;this.loginpage&quot; is null
-	at com.qa.testCasesTn.LoginTest.verifyLoginWithValidCredentials(LoginTest.java:41)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:848)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-	at org.testng.TestNG.runSuites(TestNG.java:1114)
-	at org.testng.TestNG.run(TestNG.java:1082)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>com.qa.testCasesTn.LoginTest@1cf6d1be</td></tr>
-<tr>
-<td title='com.qa.testCasesTn.LoginTest.verifyLoginWithInvalidEmailValidPassword()'><b>verifyLoginWithInvalidEmailValidPassword</b><br>Test class: com.qa.testCasesTn.LoginTest</td>
-<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;com.tn.qa.pages.LoginPage.navigateToLoginPage(String, String)&quot; because &quot;this.loginpage&quot; is null
-	at com.qa.testCasesTn.LoginTest.verifyLoginWithInvalidEmailValidPassword(LoginTest.java:61)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace30527460", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace30527460'><pre>java.lang.NullPointerException: Cannot invoke &quot;com.tn.qa.pages.LoginPage.navigateToLoginPage(String, String)&quot; because &quot;this.loginpage&quot; is null
-	at com.qa.testCasesTn.LoginTest.verifyLoginWithInvalidEmailValidPassword(LoginTest.java:61)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:848)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-	at org.testng.TestNG.runSuites(TestNG.java:1114)
-	at org.testng.TestNG.run(TestNG.java:1082)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>com.qa.testCasesTn.LoginTest@1cf6d1be</td></tr>
-<tr>
-<td title='com.qa.testCasesTn.LoginTest.verifyLoginWithValidCredentials()'><b>verifyLoginWithValidCredentials</b><br>Test class: com.qa.testCasesTn.LoginTest<br>Parameters: mashrufashanjia1000000@gmail.com, Mashrufa@123</td>
-<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;com.tn.qa.pages.LoginPage.navigateToLoginPage(String, String)&quot; because &quot;this.loginpage&quot; is null
-	at com.qa.testCasesTn.LoginTest.verifyLoginWithValidCredentials(LoginTest.java:41)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace493294557", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace493294557'><pre>java.lang.NullPointerException: Cannot invoke &quot;com.tn.qa.pages.LoginPage.navigateToLoginPage(String, String)&quot; because &quot;this.loginpage&quot; is null
-	at com.qa.testCasesTn.LoginTest.verifyLoginWithValidCredentials(LoginTest.java:41)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:848)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-	at org.testng.TestNG.runSuites(TestNG.java:1114)
-	at org.testng.TestNG.run(TestNG.java:1082)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>com.qa.testCasesTn.LoginTest@1cf6d1be</td></tr>
-<tr>
-<td title='com.qa.testCasesTn.CheckOutTest.checkOutAsGuestUser()'><b>checkOutAsGuestUser</b><br>Test class: com.qa.testCasesTn.CheckOutTest</td>
-<td><div><pre>java.lang.UnsupportedOperationException: You may not select an option in disabled select
-	at org.openqa.selenium.support.ui.Select.assertSelectIsEnabled(Select.java:327)
-	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:111)
-	at com.qa.testCasesTn.CheckOutTest.checkOutAsGuestUser(CheckOutTest.java:88)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1652114818", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1652114818'><pre>java.lang.UnsupportedOperationException: You may not select an option in disabled select
-	at org.openqa.selenium.support.ui.Select.assertSelectIsEnabled(Select.java:327)
-	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:111)
-	at com.qa.testCasesTn.CheckOutTest.checkOutAsGuestUser(CheckOutTest.java:88)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:848)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-	at org.testng.TestNG.runSuites(TestNG.java:1114)
-	at org.testng.TestNG.run(TestNG.java:1082)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>1</td>
-<td>com.qa.testCasesTn.CheckOutTest@663c9e7a</td></tr>
-<tr>
-<td title='com.qa.testCasesTn.CheckOutTest.checkoutAsNewUser()'><b>checkoutAsNewUser</b><br>Test class: com.qa.testCasesTn.CheckOutTest</td>
-<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
-	at com.qa.testCasesTn.CheckOutTest.checkoutAsNewUser(CheckOutTest.java:56)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1292262938", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1292262938'><pre>java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertTrue(Assert.java:57)
-	at org.testng.Assert.assertTrue(Assert.java:67)
-	at com.qa.testCasesTn.CheckOutTest.checkoutAsNewUser(CheckOutTest.java:56)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:848)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-	at org.testng.TestNG.runSuites(TestNG.java:1114)
-	at org.testng.TestNG.run(TestNG.java:1082)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>com.qa.testCasesTn.CheckOutTest@663c9e7a</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -608,7 +214,77 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.qa.testCasesTn.RegisterTest.verifyingRegisterWithExistingEmail()'><b>verifyingRegisterWithExistingEmail</b><br>Test class: com.qa.testCasesTn.RegisterTest</td>
+<td title='com.qa.testCasesTn.LoginTest.verifyLoginWithInvalidCredentials()'><b>verifyLoginWithInvalidCredentials</b><br>Test class: com.qa.testCasesTn.LoginTest</td>
+<td></td>
+<td>0</td>
+<td>com.qa.testCasesTn.LoginTest@1cf6d1be</td></tr>
+<tr>
+<td title='com.qa.testCasesTn.LoginTest.verifyLoginWithValidCredentials()'><b>verifyLoginWithValidCredentials</b><br>Test class: com.qa.testCasesTn.LoginTest<br>Parameters: mashrufashanjia100000@gmail.com, Mashrufa@123</td>
+<td></td>
+<td>0</td>
+<td>com.qa.testCasesTn.LoginTest@1cf6d1be</td></tr>
+<tr>
+<td title='com.qa.testCasesTn.RegisterTest.verifyingRegisterWithMismatchPassword()'><b>verifyingRegisterWithMismatchPassword</b><br>Test class: com.qa.testCasesTn.RegisterTest</td>
+<td></td>
+<td>0</td>
+<td>com.qa.testCasesTn.RegisterTest@74e28667</td></tr>
+<tr>
+<td title='com.qa.testCasesTn.LoginTest.verifyLoginWithValidCredentials()'><b>verifyLoginWithValidCredentials</b><br>Test class: com.qa.testCasesTn.LoginTest<br>Parameters: mashrufashanjia100@gmail.com, Mashrufa@123</td>
+<td></td>
+<td>1</td>
+<td>com.qa.testCasesTn.LoginTest@1cf6d1be</td></tr>
+<tr>
+<td title='com.qa.testCasesTn.LoginTest.verifyLoginWithInvalidEmailValidPassword()'><b>verifyLoginWithInvalidEmailValidPassword</b><br>Test class: com.qa.testCasesTn.LoginTest</td>
+<td></td>
+<td>0</td>
+<td>com.qa.testCasesTn.LoginTest@1cf6d1be</td></tr>
+<tr>
+<td title='com.qa.testCasesTn.LoginTest.verifyLoginWithValidCredentials()'><b>verifyLoginWithValidCredentials</b><br>Test class: com.qa.testCasesTn.LoginTest<br>Parameters: mashrufashanjia10000@gmail.com, Mashrufa@123</td>
+<td></td>
+<td>0</td>
+<td>com.qa.testCasesTn.LoginTest@1cf6d1be</td></tr>
+<tr>
+<td title='com.qa.testCasesTn.LoginTest.verifyLoginWithValidCredentials()'><b>verifyLoginWithValidCredentials</b><br>Test class: com.qa.testCasesTn.LoginTest<br>Parameters: mashrufashanjia1000@gmail.com, Mashrufa@123</td>
+<td></td>
+<td>1</td>
+<td>com.qa.testCasesTn.LoginTest@1cf6d1be</td></tr>
+<tr>
+<td title='com.qa.testCasesTn.LoginTest.verifyLoginWithValidEmailInvalidPassword()'><b>verifyLoginWithValidEmailInvalidPassword</b><br>Test class: com.qa.testCasesTn.LoginTest</td>
+<td></td>
+<td>0</td>
+<td>com.qa.testCasesTn.LoginTest@1cf6d1be</td></tr>
+<tr>
+<td title='com.qa.testCasesTn.RegisterTest.verifyingRegisterWithMandatoryFields()'><b>verifyingRegisterWithMandatoryFields</b><br>Test class: com.qa.testCasesTn.RegisterTest</td>
+<td></td>
+<td>1</td>
+<td>com.qa.testCasesTn.RegisterTest@74e28667</td></tr>
+<tr>
+<td title='com.qa.testCasesTn.SearchProductTest.verifySearchWithInvalidProduct()'><b>verifySearchWithInvalidProduct</b><br>Test class: com.qa.testCasesTn.SearchProductTest</td>
+<td></td>
+<td>0</td>
+<td>com.qa.testCasesTn.SearchProductTest@7161d8d1</td></tr>
+<tr>
+<td title='com.qa.testCasesTn.SearchProductTest.verifySearchWithValidProduct()'><b>verifySearchWithValidProduct</b><br>Test class: com.qa.testCasesTn.SearchProductTest</td>
+<td></td>
+<td>0</td>
+<td>com.qa.testCasesTn.SearchProductTest@7161d8d1</td></tr>
+<tr>
+<td title='com.qa.testCasesTn.LoginTest.verifyLoginWithNoCredentials()'><b>verifyLoginWithNoCredentials</b><br>Test class: com.qa.testCasesTn.LoginTest</td>
+<td></td>
+<td>0</td>
+<td>com.qa.testCasesTn.LoginTest@1cf6d1be</td></tr>
+<tr>
+<td title='com.qa.testCasesTn.LoginTest.verifyLoginWithValidCredentials()'><b>verifyLoginWithValidCredentials</b><br>Test class: com.qa.testCasesTn.LoginTest<br>Parameters: mashrufashanjia1000000@gmail.com, Mashrufa@123</td>
+<td></td>
+<td>0</td>
+<td>com.qa.testCasesTn.LoginTest@1cf6d1be</td></tr>
+<tr>
+<td title='com.qa.testCasesTn.SearchProductTest.verifySearchWithNoProduct()'><b>verifySearchWithNoProduct</b><br>Test class: com.qa.testCasesTn.SearchProductTest</td>
+<td></td>
+<td>0</td>
+<td>com.qa.testCasesTn.SearchProductTest@7161d8d1</td></tr>
+<tr>
+<td title='com.qa.testCasesTn.RegisterTest.verifyingRegisterWithNoFields()'><b>verifyingRegisterWithNoFields</b><br>Test class: com.qa.testCasesTn.RegisterTest</td>
 <td></td>
 <td>0</td>
 <td>com.qa.testCasesTn.RegisterTest@74e28667</td></tr>
@@ -618,35 +294,15 @@ function toggleAllBoxes() {
 <td>1</td>
 <td>com.qa.testCasesTn.RegisterTest@74e28667</td></tr>
 <tr>
-<td title='com.qa.testCasesTn.RegisterTest.verifyingRegisterWithMismatchPassword()'><b>verifyingRegisterWithMismatchPassword</b><br>Test class: com.qa.testCasesTn.RegisterTest</td>
+<td title='com.qa.testCasesTn.RegisterTest.verifyingRegisterWithExistingEmail()'><b>verifyingRegisterWithExistingEmail</b><br>Test class: com.qa.testCasesTn.RegisterTest</td>
 <td></td>
 <td>0</td>
 <td>com.qa.testCasesTn.RegisterTest@74e28667</td></tr>
 <tr>
-<td title='com.qa.testCasesTn.RegisterTest.verifyingRegisterWithNoFields()'><b>verifyingRegisterWithNoFields</b><br>Test class: com.qa.testCasesTn.RegisterTest</td>
+<td title='com.qa.testCasesTn.CheckOutTest.checkOutAsGuestUser()'><b>checkOutAsGuestUser</b><br>Test class: com.qa.testCasesTn.CheckOutTest</td>
 <td></td>
-<td>0</td>
-<td>com.qa.testCasesTn.RegisterTest@74e28667</td></tr>
-<tr>
-<td title='com.qa.testCasesTn.RegisterTest.verifyingRegisterWithMandatoryFields()'><b>verifyingRegisterWithMandatoryFields</b><br>Test class: com.qa.testCasesTn.RegisterTest</td>
-<td></td>
-<td>1</td>
-<td>com.qa.testCasesTn.RegisterTest@74e28667</td></tr>
-<tr>
-<td title='com.qa.testCasesTn.SearchProductTest.verifySearchWithValidProduct()'><b>verifySearchWithValidProduct</b><br>Test class: com.qa.testCasesTn.SearchProductTest</td>
-<td></td>
-<td>1</td>
-<td>com.qa.testCasesTn.SearchProductTest@7161d8d1</td></tr>
-<tr>
-<td title='com.qa.testCasesTn.SearchProductTest.verifySearchWithInvalidProduct()'><b>verifySearchWithInvalidProduct</b><br>Test class: com.qa.testCasesTn.SearchProductTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testCasesTn.SearchProductTest@7161d8d1</td></tr>
-<tr>
-<td title='com.qa.testCasesTn.SearchProductTest.verifySearchWithNoProduct()'><b>verifySearchWithNoProduct</b><br>Test class: com.qa.testCasesTn.SearchProductTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testCasesTn.SearchProductTest@7161d8d1</td></tr>
+<td>12</td>
+<td>com.qa.testCasesTn.CheckOutTest@663c9e7a</td></tr>
 </table><p>
 </body>
 </html>
