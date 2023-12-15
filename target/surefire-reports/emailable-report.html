@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">16</td><td class="num">0</td><td class="num">0</td><td class="num attn">5</td><td class="num">204,466</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">com.qa.testCasesTn.CheckOutTest</td><td><a href="#m0">checkOutAsExistingUser</a></td><td rowspan="1">1701509081581</td><td rowspan="1">26938</td></tr><tr class="failedeven"><td><a href="#m1">checkOutAsGuestUser</a></td><td rowspan="1">1701509049882</td><td rowspan="1">20035</td></tr><tr class="failedodd"><td rowspan="3">com.qa.testCasesTn.LoginTest</td><td><a href="#m2">verifyLoginWithInvalidCredentials</a></td><td rowspan="1">1701509003720</td><td rowspan="1">727</td></tr><tr class="failedodd"><td><a href="#m3">verifyLoginWithInvalidEmailValidPassword</a></td><td rowspan="1">1701509014993</td><td rowspan="1">594</td></tr><tr class="failedodd"><td><a href="#m4">verifyLoginWithNoCredentials</a></td><td rowspan="1">1701509020409</td><td rowspan="1">489</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.qa.testCasesTn.AddtoCartTest</td><td><a href="#m5">checkingOutValidProduct</a></td><td rowspan="1">1701508908330</td><td rowspan="1">8239</td></tr><tr class="passedodd"><td rowspan="1">com.qa.testCasesTn.CheckOutTest</td><td><a href="#m6">checkoutAsNewUser</a></td><td rowspan="1">1701509031190</td><td rowspan="1">7631</td></tr><tr class="passedeven"><td rowspan="6">com.qa.testCasesTn.LoginTest</td><td><a href="#m7">verifyLoginWithValidCredentials</a></td><td rowspan="5">1701508984310</td><td rowspan="5">998</td></tr><tr class="passedeven"><td><a href="#m8">verifyLoginWithValidCredentials</a></td></tr><tr class="passedeven"><td><a href="#m9">verifyLoginWithValidCredentials</a></td></tr><tr class="passedeven"><td><a href="#m10">verifyLoginWithValidCredentials</a></td></tr><tr class="passedeven"><td><a href="#m11">verifyLoginWithValidCredentials</a></td></tr><tr class="passedeven"><td><a href="#m12">verifyLoginWithValidEmailInvalidPassword</a></td><td rowspan="1">1701509009652</td><td rowspan="1">594</td></tr><tr class="passedodd"><td rowspan="5">com.qa.testCasesTn.RegisterTest</td><td><a href="#m13">verifyingRegisterWithAllFields</a></td><td rowspan="1">1701508943986</td><td rowspan="1">1374</td></tr><tr class="passedodd"><td><a href="#m14">verifyingRegisterWithExistingEmail</a></td><td rowspan="1">1701508951561</td><td rowspan="1">923</td></tr><tr class="passedodd"><td><a href="#m15">verifyingRegisterWithMandatoryFields</a></td><td rowspan="1">1701508936780</td><td rowspan="1">1156</td></tr><tr class="passedodd"><td><a href="#m16">verifyingRegisterWithMismatchPassword</a></td><td rowspan="1">1701508959294</td><td rowspan="1">924</td></tr><tr class="passedodd"><td><a href="#m17">verifyingRegisterWithNoFields</a></td><td rowspan="1">1701508965209</td><td rowspan="1">532</td></tr><tr class="passedeven"><td rowspan="3">com.qa.testCasesTn.SearchProductTest</td><td><a href="#m18">verifySearchWithInvalidProduct</a></td><td rowspan="1">1701508925809</td><td rowspan="1">958</td></tr><tr class="passedeven"><td><a href="#m19">verifySearchWithNoProduct</a></td><td rowspan="1">1701508930556</td><td rowspan="1">1000</td></tr><tr class="passedeven"><td><a href="#m20">verifySearchWithValidProduct</a></td><td rowspan="1">1701508920790</td><td rowspan="1">1224</td></tr></tbody>
+</table>
+<h2>Test</h2><h3 id="m0">com.qa.testCasesTn.CheckOutTest#checkOutAsExistingUser</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;table-responsive&apos;]&quot;}
+  (Session info: chrome=119.0.6045.160)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7b3e26c728ba5889ef8657d7d9166c2d, findElement {using=xpath, value=//div[@class=&apos;table-responsive&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\sajid\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53987}, networkConnectionEnabled: false, pageLoadStrategy: eager, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53987/devtoo..., se:cdpVersion: 119.0.6045.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7b3e26c728ba5889ef8657d7d9166c2d
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy9.isDisplayed(Unknown Source)
+	at com.tn.qa.pages.CheckOut_LoginPage.getStatusofOrderInfoDisplayed(CheckOut_LoginPage.java:180)
+	at com.qa.testCasesTn.CheckOutTest.checkOutAsExistingUser(CheckOutTest.java:124)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 36 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.qa.testCasesTn.CheckOutTest#checkOutAsGuestUser</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h2[(contains(text(),&apos;New Customer&apos;))]&quot;}
+  (Session info: chrome=119.0.6045.160)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [be2a5525e8eea37c952e84542b500e87, findElement {using=xpath, value=//h2[(contains(text(),&apos;New Customer&apos;))]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\sajid\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53896}, networkConnectionEnabled: false, pageLoadStrategy: eager, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53896/devtoo..., se:cdpVersion: 119.0.6045.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: be2a5525e8eea37c952e84542b500e87
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy9.isDisplayed(Unknown Source)
+	at com.tn.qa.pages.CheckOutPage.getStatusofCheckoutOptionsDisplayed(CheckOutPage.java:49)
+	at com.qa.testCasesTn.CheckOutTest.checkOutAsGuestUser(CheckOutTest.java:78)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 36 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.qa.testCasesTn.LoginTest#verifyLoginWithInvalidCredentials</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;java.lang.CharSequence.toString()&quot; because &quot;s&quot; is null
+	at java.base/java.lang.String.contains(String.java:2854)
+	at com.qa.testCasesTn.LoginTest.verifyLoginWithInvalidCredentials(LoginTest.java:56)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.qa.testCasesTn.LoginTest#verifyLoginWithInvalidEmailValidPassword</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;java.lang.CharSequence.toString()&quot; because &quot;s&quot; is null
+	at java.base/java.lang.String.contains(String.java:2854)
+	at com.qa.testCasesTn.LoginTest.verifyLoginWithInvalidEmailValidPassword(LoginTest.java:79)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.qa.testCasesTn.LoginTest#verifyLoginWithNoCredentials</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;java.lang.CharSequence.toString()&quot; because &quot;s&quot; is null
+	at java.base/java.lang.String.contains(String.java:2854)
+	at com.qa.testCasesTn.LoginTest.verifyLoginWithNoCredentials(LoginTest.java:88)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.qa.testCasesTn.AddtoCartTest#checkingOutValidProduct</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.qa.testCasesTn.CheckOutTest#checkoutAsNewUser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.qa.testCasesTn.LoginTest#verifyLoginWithValidCredentials</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>mashrufashanjia10000@gmail.com</td><td>Mashrufa@123</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">com.qa.testCasesTn.LoginTest#verifyLoginWithValidCredentials</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>mashrufashanjia100000@gmail.com</td><td>Mashrufa@123</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">com.qa.testCasesTn.LoginTest#verifyLoginWithValidCredentials</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>mashrufashanjia100@gmail.com</td><td>Mashrufa@123</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">com.qa.testCasesTn.LoginTest#verifyLoginWithValidCredentials</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>mashrufashanjia1000000@gmail.com</td><td>Mashrufa@123</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">com.qa.testCasesTn.LoginTest#verifyLoginWithValidCredentials</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>mashrufashanjia1000@gmail.com</td><td>Mashrufa@123</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">com.qa.testCasesTn.LoginTest#verifyLoginWithValidEmailInvalidPassword</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">com.qa.testCasesTn.RegisterTest#verifyingRegisterWithAllFields</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m14">com.qa.testCasesTn.RegisterTest#verifyingRegisterWithExistingEmail</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m15">com.qa.testCasesTn.RegisterTest#verifyingRegisterWithMandatoryFields</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m16">com.qa.testCasesTn.RegisterTest#verifyingRegisterWithMismatchPassword</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m17">com.qa.testCasesTn.RegisterTest#verifyingRegisterWithNoFields</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m18">com.qa.testCasesTn.SearchProductTest#verifySearchWithInvalidProduct</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m19">com.qa.testCasesTn.SearchProductTest#verifySearchWithNoProduct</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m20">com.qa.testCasesTn.SearchProductTest#verifySearchWithValidProduct</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
